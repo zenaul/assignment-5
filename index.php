@@ -4,7 +4,15 @@
 <?php
     $action = isAdmin() && !empty($_GET['action']) ? $_GET['action'] : '';
     $id = !empty( $_GET['id'] ) ? $_GET['id'] : '';
+
+    $error = !empty( $_GET['error'] ) ? $_GET['error'] : '';
+    $msg = !empty( $_GET['msg'] ) ? $_GET['msg'] : '';
 ?>
+<?php if( $error ): ?>
+<div class="alert alert-danger">
+    <?php echo $msg; ?>
+</div>
+<?php endif; ?>
 <?php 
     if("edit" == $action && !empty( $id ) && isAdmin()){
         $user = getUser($id);

@@ -36,6 +36,9 @@
             </div>
             <button type="submit" class="btn btn-primary">Login</button>
         </form>
+        <p class="card-text">Test User and Admin Login info</p>
+        <p class="card-text">Email: admin@gmail.com<br/>Password: 12345<br/></p>
+        <p class="card-text">Email: testuser@gmail.com<br/>Password: 12345<br/></p>
         </div>
         </div>
     </div>

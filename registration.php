@@ -9,6 +9,9 @@
             header( "Location: user_dashboard.php" );
         }
     }
+
+    $error = !empty( $_GET['error'] ) ? $_GET['error'] : '';
+    $msg = !empty( $_GET['msg'] ) ? $_GET['msg'] : '';
 ?>
 <?php include_once './template/nav.php';?>
 <div class="row">
@@ -17,6 +20,11 @@
         <div class="card-body">
             <h5 class="card-title">Registration</h5>
             <hr />
+            <?php if( $error ): ?>
+            <div class="alert alert-danger">
+                <?php echo $msg; ?>
+            </div>
+            <?php endif; ?>
             <form action="process/process_registration.php" method="post">
             <div class="form-group">
                 <label for="email">Username</label>
