@@ -1,1 +1,8 @@
-assignment-5
+<h1>Test User and Admin Login info</h1>
+<h2>Admin Info</h2>
+Email: admin@gmail.com
+Password: 12345
+
+<h2>User Info</h2>
+Email: testuser@gmail.com
+Password: 12345
